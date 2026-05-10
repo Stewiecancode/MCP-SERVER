@@ -34,6 +34,8 @@
     "typescript": "^6.0.3"
   },
   "compilerOptions": {
-    "types": ["node"]
+    "types": [
+      "node"
+    ]
   }
 }
