@@ -67,8 +67,10 @@ async function readLogFile() {
 // start the server using stdio transport
 async function main() {
   try{
-
+  const transport = new StdioServerTransport();
+  await server.connect(transport);
+  console.error("MCP Server is running...");
   } catch (error) {
-    
+   
   }
 }
