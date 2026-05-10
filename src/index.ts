@@ -1,7 +1,11 @@
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { mime, z } from "zod";
+import fs from "fs/promises";
 
+async function readLogFile(path: string): Promise<string> {
+  return await fs.readFile(path, "utf-8");
+}
 
 const server = new Server({
   name: "MCP Server",
