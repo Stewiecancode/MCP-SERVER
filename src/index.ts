@@ -16,11 +16,12 @@ const ListResourcesRequestSchema = z.object({});
 
 // List available resources
 server.setRequestHandler(ListResourcesRequestSchema, async () => {
-  return [
+  return {
+  resources: [
     {
       uri: "file:///Users/Documents/MCP-SERVER/logs.txt",
       name: "Application Logs.txt",
       mimeType: "text/plain",
     },
-  ];
+  ]};
 });
