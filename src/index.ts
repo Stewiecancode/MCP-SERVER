@@ -55,6 +55,8 @@ async function readLogFile() {
   const data = await fs.readFile(logPath, "utf-8");
   return data;
   } catch (error) {
-
+    console.error("Error reading log file:", error);
+    return "Error reading log file." + 
+    (error instanceof Error ? error.message : String(error));
   }
 }
