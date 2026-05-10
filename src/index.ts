@@ -34,9 +34,11 @@ server.setRequestHandler(ReadResourceContentRequestSchema, async ( request ) => 
         const logContents = await readLogFile();
         return {
             contents: [
+                {
                 uri,
                 mimeType: "text/plain",
                 text: logContents,
+                }
             ]
         }
 });
