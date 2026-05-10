@@ -12,14 +12,15 @@ capabilities: {
 }
 })
 
-// List availiable resources 
-server.setRequestHandler("ListResourcesRequestSchema", async () => {
-   return [
-    {
-        uri: "file:///Users/Documents/my-mcp-server/logs.txt",
-        name: "Application Logs.txt",
-        mimeType: "text/plain",
-    }
-   ]
+const ListResourcesRequestSchema = z.object({});
 
-})
+// List available resources
+server.setRequestHandler(ListResourcesRequestSchema, async () => {
+  return [
+    {
+      uri: "file:///Users/Documents/MCP-SERVER/logs.txt",
+      name: "Application Logs.txt",
+      mimeType: "text/plain",
+    },
+  ];
+});
