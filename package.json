@@ -2,17 +2,18 @@
   "name": "mcp-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-    "exports": {
+  "main": "./index.js",
     "type": "module",
     "bin": {
       "mcp-server": "./index.js"
-    }
-  },
+    },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && cp package.json dist/package.json"
   },
+  "files" : [
+    "build"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Stewiecancode/MCP-SERVER.git"
