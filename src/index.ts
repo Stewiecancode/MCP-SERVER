@@ -1,6 +1,6 @@
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { z } from "zod";
+import { mime, z } from "zod";
 
 const server = new Server({
   name: "MCP Server",
@@ -18,6 +18,7 @@ server.setRequestHandler("ListResourcesRequestSchema", async () => {
     {
         uri: "file:///Users/Documents/my-mcp-server/logs.txt",
         name: "Application Logs.txt",
+        mimeType: "text/plain",
     }
    ]
 
