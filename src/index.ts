@@ -13,6 +13,7 @@ capabilities: {
 })
 
 const ListResourcesRequestSchema = z.object({});
+const ReadResourceContentRequestSchema = z.object({});
 
 // List available resources
 server.setRequestHandler(ListResourcesRequestSchema, async () => {
@@ -24,4 +25,9 @@ server.setRequestHandler(ListResourcesRequestSchema, async () => {
       mimeType: "text/plain",
     },
   ]};
+});
+
+//Read resource content
+server.setRequestHandler(ReadResourceContentRequestSchema, async ( request ) => {
+
 });
