@@ -17,7 +17,7 @@ capabilities: {
 })
 
 const ListResourcesRequestSchema = z.object({});
-const ReadResourceContentRequestSchema = z.object({});
+const ReadResourceContentRequestSchema = z.object({ uri: z.string() });
 
 // List available resources
 server.setRequestHandler(ListResourcesRequestSchema, async () => {
