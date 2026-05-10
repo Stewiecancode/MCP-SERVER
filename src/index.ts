@@ -3,7 +3,6 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { mime, z } from "zod";
 import fs from "fs/promises";
 import * as path from 'path';
-import { process } from "zod/v4/core";
 
 // ...existing code...
 
