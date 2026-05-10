@@ -33,7 +33,7 @@ server.setRequestHandler(ListResourcesRequestSchema, async () => {
 
 //Read resource content
 server.setRequestHandler(ReadResourceContentRequestSchema, async ( request ) => {
-    const uri  = request.params.uri;
+    const uri  = request.uri;
     if (uri === "file:///Users/Documents/MCP-SERVER/logs.txt") {
         const logContents = await readLogFile();
         return {
