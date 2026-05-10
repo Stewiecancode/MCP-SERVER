@@ -41,4 +41,5 @@ server.setRequestHandler(ReadResourceContentRequestSchema, async ( request ) => 
                 }
             ]
         }
+    }
 });
