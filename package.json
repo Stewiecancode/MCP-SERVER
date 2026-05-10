@@ -3,8 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+    "exports": {
+    "type": "module",
+    "bin": {
+      "mcp-server": "./index.js"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && cp package.json dist/package.json"
   },
   "repository": {
     "type": "git",
@@ -17,5 +24,13 @@
   "bugs": {
     "url": "https://github.com/Stewiecancode/MCP-SERVER/issues"
   },
-  "homepage": "https://github.com/Stewiecancode/MCP-SERVER#readme"
+  "homepage": "https://github.com/Stewiecancode/MCP-SERVER#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "typescript": "^6.0.3"
+  }
 }
