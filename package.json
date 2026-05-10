@@ -2,7 +2,7 @@
   "name": "mcp-server",
   "version": "1.0.0",
   "description": "",
-  "main": "./index.js",
+  "main": "index.js",
     "type": "module",
     "bin": {
       "mcp-server": "./index.js"
@@ -21,7 +21,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Stewiecancode/MCP-SERVER/issues"
   },
