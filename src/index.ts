@@ -63,3 +63,12 @@ async function readLogFile() {
     (error instanceof Error ? error.message : String(error));
   }
 }
+
+// start the server using stdio transport
+async function main() {
+  try{
+
+  } catch (error) {
+    
+  }
+}
