@@ -40,6 +40,7 @@ server.setRequestHandler(ReadResourceContentRequestSchema, async ( request ) => 
                 text: logContents,
                 }
             ]
-        }
+        };
     }
+    throw new Error("Resource not found");
 });
