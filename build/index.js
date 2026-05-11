@@ -44,7 +44,9 @@ server.setRequestHandler(ReadResourceContentRequestSchema, async (request) => {
     }
     throw new Error("Resource not found");
 });
-//.. read file code
+
+// read file code
+
 async function readLogFile() {
     try {
         const logPath = path.resolve("file:///Users/Documents/MCP-SERVER/logs.txt");
