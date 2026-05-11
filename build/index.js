@@ -50,7 +50,7 @@ server.setRequestHandler(ReadResourceContentRequestSchema, async (request) => {
 async function readLogFile() {
     try {
         const logPath = path.resolve("file:///Users/Documents/MCP-SERVER/logs.txt");
-        //Read  File
+        // Read  File
         const data = await fs.readFile(logPath, "utf-8");
         return data;
     }
