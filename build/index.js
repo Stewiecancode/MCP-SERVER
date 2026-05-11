@@ -3,7 +3,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 import fs from "fs/promises";
 import * as path from 'path';
-// ...existing code...
+
 const server = new Server({
     name: "MCP Server",
     version: "1.0.0",
